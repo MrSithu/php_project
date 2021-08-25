@@ -1,0 +1,61 @@
+users
+=====
+id
+slug
+name
+email
+password
+image(nullable)
+
+
+category
+========
+id
+slug (8989-web)
+name (web)
+
+language
+========
+id
+slug (8989-php)
+name (php)
+
+
+articles
+========
+id
+slug (8989-article)
+user_id
+category_id
+title
+image
+description
+
+
+articles_languages      (middle table for many to many rs)
+==================
+id
+article_id
+language_id
+
+
+articles_likes           
+=============
+id
+user_id
+article_id
+
+
+articles_comments           
+=============
+id
+user_id
+article_id
+
+show own posts
+update delete posts that user created
+like action in index
+
+
+
+
